@@ -1,0 +1,27 @@
+# 404 File not Found
+ErrorDocument 404 /404.html
+
+# ファビコン一括設定
+<Files favicon.ico>
+ErrorDocument 404 /favicon.ico
+</Files>
+
+# キャッシュ期限設定
+<Files ~ ".(gif|jpe?g|png|ico)$">
+	Header set Cache-Control "max-age=2592000, public"
+</Files>
+
+<Files ~ ".(css|js|html|gz)$">
+	Header set Cache-Control "max-age=864000, public"
+</Files>
+
+# SVG利用設定
+AddType image/svg+xml svg
+
+# index.php 無し統一
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+
+# リダイレクト設定
+RewriteRule ^index.html / [R=301,L]
