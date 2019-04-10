@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+$contentsPadding: 20px;
+$contentsMax: 1240px;
+$primaryColor: #2FA6DE;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
+@mixin faIcon($weight:900) {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: $weight;
+}
+
 /* リセット
 ----------------------------------------------------------------------------*/
 @import 'reset';
+
+/* 共通
+----------------------------------------------------------------------------*/
+@import 'common';
+
+/* home
+----------------------------------------------------------------------------*/
+@import 'home';

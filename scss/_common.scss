@@ -1,0 +1,181 @@
+body {
+  font-family: 'Roboto', Arial, serif;
+  font-size: 62.5%;
+  min-width: 1000px;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Slab', Arial, sans-serif;
+}
+
+a { text-decoration: none; transition: .3s;
+  img { transition: .3s; }
+  &:hover { color: $primaryColor;
+    img { opacity: .7; }
+  }
+}
+
+p { font-size: 18px; line-height: 1.8; text-align: justify; }
+
+::selection { color: #fcfcfc; background: #2FA6DE; }
+
+.wrap { position: relative; }
+
+.inner-wrap {
+  margin: 0 auto;
+  padding: 0 $contentsPadding;
+  width: 100%;
+  max-width: $contentsMax;
+}
+
+header {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 888;
+  width: 100%;
+  background-color: rgba(255,255,255,.95);
+  box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.22);
+  transition: background-color .3s;
+  .inner-wrap { display: flex; justify-content: space-between; align-items: center; }
+  .logo { width: 200px; transition: .3s;
+    a { display: block; line-height: 0; }
+    img { width: 100%; height: auto; }
+  }
+  nav { font-family: 'Roboto Slab', Arial, sans-serif; font-weight: 300; letter-spacing: 1px;
+    ul { display: flex; }
+    li { font-size: 16px;
+      a {
+        padding: 42px 16px;
+        display: block;
+        color: rgba(0,0,0,.8);
+        transition: .3s;
+      }
+      &:hover a, &.current a {
+        color: rgba(0,0,0,.8);
+        background: #e6e6e6;
+      }
+    }
+  }
+  &.fixed { position: fixed; top: 0; background-color: #FFF;
+    .logo { width: 120px; }
+    nav li a { padding: 25px 16px; }
+  }
+}
+
+.main-visual {
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0,0,0,.3);
+  }
+  .bottom-scroll {
+    position: absolute;
+    z-index: 3;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%,0);
+    a { display: block; color: #FFF; }
+    span { font-family: 'Roboto Slab', Arial, sans-serif; letter-spacing: .2em; }
+    .icon-mouse {
+      margin: 0 auto 10px;
+      width: 30px;
+      height: 50px;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      font-family: serif;
+      &:before {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        content: '';
+        width: 6px;
+        height: 6px;
+        margin-left: -3px;
+        background-color: #fff;
+        border-radius: 100%;
+        animation: mouse-wheel 2s infinite;
+      }
+    }
+  }
+  @keyframes mouse-wheel {
+    0% { transform: translate(0, 0); opacity: 0; }
+    40% { opacity: 1; }
+    80% { transform: translate(0, 20px); opacity: 0; }
+    100% { opacity: 0; }
+  }
+}
+
+footer {
+  color: #65696F;
+  background: #222831;
+  h3 {
+    margin-bottom: 30px;
+    color: #D3D4D6;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  a { color: #919498; }
+  .footer-contents {
+    padding: 110px 0 80px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .item { width: 22.5%; }
+    ul { line-height: 1.8; font-size: 18px; letter-spacing: 1px;
+      li:not(:last-child) { margin-bottom: 10px; }
+      &.icon { font-weight: 300; letter-spacing: 0.05em;
+        li { padding-left: 2em; position: relative; word-break: break-all;
+          &:before {
+            position: absolute;
+            left: 0;
+            color: #BDBFC2;
+            @include faIcon();
+          }
+          &.link:before { content: "\f0c1"; }
+          &.twitter:before { content: "\f099"; font-family: "Font Awesome 5 Brands"; }
+          &.tv:before { content: "\f26c"; }
+        }
+      }
+    }
+  }
+  .copyright {
+    padding: 60px 0;
+    .social { margin-bottom: 20px; display: flex; justify-content: center;
+      li {
+        display: block;
+        width: 26px;
+        height: 26px;
+        font-size: 0;
+        a { display: block;
+          &:before { line-height: 1; font-family: "Font Awesome 5 Brands"; font-size: 26px; }
+        }
+        &.twitter a {
+          &:hover { color: #1DA1F2; }
+          &:before { content: "\f099"; }
+        }
+        &.facebook a {
+          &:hover { color: #4267B2; }
+          &:before { content: "\f082"; }
+        }
+        &.line a {
+          &:hover { color: #00B900; }
+          &:before { content: "\f3c0"; }
+        }
+        &:not(:last-child) { margin-right: 20px; }
+      }
+    }
+    p { font-size: 16px; text-align: center; }
+  }
+}
