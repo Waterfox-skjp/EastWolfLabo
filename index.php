@@ -12,13 +12,13 @@
     <main>
       <div id="js-main-visual" class="main-visual">
         <div class="bottom-scroll">
-          <a href="#SCROll">
+          <a href="#main">
             <div class="icon-mouse"></div>
             <span>SCROll</span>
           </a>
         </div>
       </div>
-      <div id="SCROll" class="project-list">
+      <div id="main" class="project-list">
         <ul>
           <li>
             <a href="/number_virus_searcher/">

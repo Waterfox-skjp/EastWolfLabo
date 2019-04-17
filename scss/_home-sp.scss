@@ -1,0 +1,10 @@
+.home {
+  .project-list {
+    ul { display: block; }
+    li {
+      a {
+        h2 { padding: 0 5%; @include vmin(38); }
+      }
+    }
+  }
+}

@@ -26,7 +26,7 @@
       </div>
       <div class="item">
         <h3>Twitter</h3>
-        <a class="twitter-timeline" data-lang="en" data-width="270" data-height="600" href="https://twitter.com/EastWolfLabo?ref_src=twsrc%5Etfw">Tweets by EastWolfLabo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-lang="en" data-width="640" data-height="600" href="https://twitter.com/EastWolfLabo?ref_src=twsrc%5Etfw">Tweets by EastWolfLabo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
     <div class="copyright">
@@ -35,7 +35,7 @@
         <li class="facebook"><a href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href),'sharewindow','width=650, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');" target="_blank">Facebook</a></li>
         <li class="line"><a href="javascript:window.open('http://line.me/R/msg/text/?'+encodeURIComponent(document.title)+'%20'+encodeURIComponent(location.href),'sharewindow','width=650, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');" target="_blank">LINE</a></li>
       </ul>
-      <p>© 2014 - 2019 EastWolfLaboratory All Rights Reserved. </p>
+      <p>© 2014 - <?php echo date('Y'); ?> EastWolfLaboratory All Rights Reserved. </p>
     </div>
   </div>
 </footer>

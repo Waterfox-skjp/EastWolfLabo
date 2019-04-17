@@ -43,17 +43,19 @@ header {
     a { display: block; line-height: 0; }
     img { width: 100%; height: auto; }
   }
+  .btn-nav { display: none; }
   nav { font-family: 'Roboto Slab', Arial, sans-serif; font-weight: 300; letter-spacing: 1px;
+    .head-area { display: none; }
     ul { display: flex; }
     li { font-size: 16px;
       a {
         padding: 42px 16px;
         display: block;
-        color: rgba(0,0,0,.8);
+        color: #323232;
         transition: .3s;
       }
       &:hover a, &.current a {
-        color: rgba(0,0,0,.8);
+        color: #323232;
         background: #e6e6e6;
       }
     }
@@ -132,7 +134,9 @@ footer {
     display: flex;
     justify-content: space-between;
     position: relative;
-    .item { width: 22.5%; }
+    .item { width: 22.5%;
+      iframe { width: 100%; }
+    }
     ul { line-height: 1.8; font-size: 18px; letter-spacing: 1px;
       li:not(:last-child) { margin-bottom: 10px; }
       &.icon { font-weight: 300; letter-spacing: 0.05em;

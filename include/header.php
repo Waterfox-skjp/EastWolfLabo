@@ -17,7 +17,12 @@
         echo '<div class="logo"><a href="/"><img src="/images/common/logo.png" alt="東狼研究所"></a></div>';
       }
     ?>
+    <div id="js-nav-open" class="btn-nav"><img src="/images/common/btn-nav.svg" alt=""></div>
+    <div id="js-nav-bg" class="bg-black"></div>
     <nav>
+      <div class="head-area">
+        <div id="js-nav-close" class="btn-close"><img src="/images/common/btn-close.svg" alt=""></div>
+      </div>
       <ul>
         <li class="<?php nav_current('/');?>">
           <a href="/">HOME</a>
