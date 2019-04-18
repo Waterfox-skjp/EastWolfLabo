@@ -3,14 +3,15 @@
 <head>
 <?php
   $title = '';
-  require_once($_SERVER['DOCUMENT_ROOT'] . '/include/head.php');
+  include_once($_SERVER['DOCUMENT_ROOT'] . '/include/head.php');
 ?>
 </head>
 <body class="home">
   <div class="wrap">
-    <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/include/header.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/include/header.php'); ?>
     <main>
       <div id="js-main-visual" class="main-visual">
+        <div class="bg-cloud"></div>
         <div class="bottom-scroll">
           <a href="#main">
             <div class="icon-mouse"></div>
@@ -53,8 +54,8 @@
         </ul>
       </div>
     </main>
-    <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/include/footer.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/include/footer.php'); ?>
   </div>
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/include/script.php'); ?>
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . '/include/script.php'); ?>
 </body>
 </html>
