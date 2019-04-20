@@ -13,13 +13,13 @@
       <div id="js-main-visual" class="main-visual">
         <div class="bg-cloud"></div>
         <div class="bottom-scroll">
-          <a href="#main">
+          <a href="#anchor-contents">
             <div class="icon-mouse"></div>
             <span>SCROll</span>
           </a>
         </div>
       </div>
-      <div id="main" class="project-list">
+      <div id="anchor-contents" class="project-list">
         <ul>
           <li>
             <a href="/number_virus_searcher/">

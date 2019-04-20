@@ -6,10 +6,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto Slab', Arial, sans-serif;
+	font-family: $alphabetFont;
 }
 
-a { text-decoration: none; transition: .3s;
+a { text-decoration: none; transition: .3s; color: #212121;
   img { transition: .3s; }
   &:hover { color: $primaryColor;
     img { opacity: .7; }
@@ -44,7 +44,7 @@ header {
     img { width: 100%; height: auto; }
   }
   .btn-nav { display: none; }
-  nav { font-family: 'Roboto Slab', Arial, sans-serif; font-weight: 300; letter-spacing: 1px;
+  nav { font-family: $alphabetFont; font-weight: 300; letter-spacing: 1px;
     .head-area { display: none; }
     ul { display: flex; }
     li { font-size: 16px;
@@ -67,12 +67,27 @@ header {
 }
 
 .main-visual {
+  padding-top: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   height: 100vh;
+  color: #FFF;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  &:after {
+  h1 {
+    padding: 0 $contentsPadding;
+    position: relative;
+    z-index: 4;
+    font-size: 40px;
+    font-family: $alphabetFont;
+    text-align: center;
+    letter-spacing: .1em;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  &:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -88,7 +103,7 @@ header {
     left: 50%;
     transform: translate(-50%,0);
     a { display: block; color: #FFF; }
-    span { font-family: 'Roboto Slab', Arial, sans-serif; letter-spacing: .2em; }
+    span { font-family: $alphabetFont; letter-spacing: .2em; }
     .icon-mouse {
       margin: 0 auto 10px;
       width: 30px;
@@ -116,6 +131,20 @@ header {
     80% { transform: translate(0, 20px); opacity: 0; }
     100% { opacity: 0; }
   }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: .1em;
+      opacity: 1;
+    }
+  }
+  
 }
 
 footer {
