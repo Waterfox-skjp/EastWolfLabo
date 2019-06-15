@@ -1,4 +1,10 @@
 .home {
+  .main-visual {
+    .bg-cloud {
+      height: 50vmin;
+      animation: cloud 120s linear infinite;
+    }
+  }
   .project-list {
     ul { display: block; }
     li {
