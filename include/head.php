@@ -1,13 +1,13 @@
 <?php
-  define (URL, (empty($_SERVER['HTTPS']) ? 'http://' : 'https://').$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
-  if ($title) {
-    $title = $title . ' | 東狼研究所 EastWolfLaboratory';
-  } else {
-    $title = '東狼研究所 EastWolfLaboratory';
-  }
-  $description = '今話題のWEB謎解きサイト！君にはこの謎を解くことができるか！？';
-  $ogp_image = (empty($_SERVER['HTTPS']) ? 'http://' : 'https://').$_SERVER['HTTP_HOST'] . '/images/common/ogp.png';
-  $css_time = filemtime($_SERVER['DOCUMENT_ROOT'] . '/css/style.css');
+	define (URL, (empty($_SERVER['HTTPS']) ? 'http://' : 'https://').$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+	if ($title) {
+		$title = $title . ' | 東狼研究所 EastWolfLaboratory';
+	} else {
+		$title = '東狼研究所 EastWolfLaboratory';
+	}
+	$description = '今話題のWEB謎解きサイト！君にはこの謎を解くことができるか！？';
+	$ogp_image = (empty($_SERVER['HTTPS']) ? 'http://' : 'https://').$_SERVER['HTTP_HOST'] . '/images/common/ogp.png';
+	$css_time = filemtime($_SERVER['DOCUMENT_ROOT'] . '/css/style.css');
 ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

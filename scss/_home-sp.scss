@@ -1,16 +1,16 @@
 .home {
-  .main-visual {
-    .bg-cloud {
-      height: 50vmin;
-      animation: cloud 120s linear infinite;
-    }
-  }
-  .project-list {
-    ul { display: block; }
-    li {
-      a {
-        h2 { padding: 0 5%; @include vmin(38); }
-      }
-    }
-  }
+	.main-visual {
+		.bg-cloud {
+			height: 50vmin;
+			animation: cloud 120s linear infinite;
+		}
+	}
+	.project-list {
+		ul { display: block; }
+		li {
+			a {
+				h2 { padding: 0 5%; @include vmin(38); }
+			}
+		}
+	}
 }
