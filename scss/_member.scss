@@ -1,0 +1,72 @@
+.member {
+	.main-visual {
+		background-image: url(/images/member/main-visual.jpg);
+	}
+	.member-wrap {
+		padding: 110px 0;
+		h2 {
+			margin-bottom: 30px;
+			font-family: 'Roboto', Arial, serif;
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			span { font-family: "Roboto Slab",Arial,sans-serif; font-weight: normal; }
+		}
+		.member-list { display: flex; flex-wrap: wrap;
+			> li { width: 132.5px; text-align: center;
+				.icon-wrap {
+					margin-bottom: 15px;
+					border-radius: 50%;
+					overflow: hidden;
+					line-height: 0;
+					img { width: 100%; }
+				}
+				.name {
+					margin-bottom: 8px;
+					line-height: 1.2;
+					color: #000;
+					font-family: 'Roboto', Arial, serif;
+					font-size: 20px;
+					font-weight: bold;
+				}
+				.role {
+					line-height: 1.2;
+					color: #888;
+					font-size: 14px;
+					letter-spacing: 0.05em;
+					text-align: center;
+				}
+				.social-list { margin-top: 15px; display: flex; justify-content: center;
+					li {
+						display: block;
+						width: 18px;
+						height: 18px;
+						font-size: 0;
+						.inner { display: block; color: #888;
+							&:before {
+								line-height: 1;
+								font-size: 18px;
+							}
+						}
+						&.twitter {
+							a.inner { color: #1DA1F2; }
+							.inner {
+								&:before { font-family: "Font Awesome 5 Brands"; content: "\f099"; }
+							}
+						}
+						&.link {
+							a.inner { color: #ff9f00; }
+							.inner {
+								&:before { @include faIcon(); content: "\f0c1"; }
+							}
+						}
+						&:not(:last-child) { margin-right: 12px; }
+					}
+				}
+				&:not(:nth-child(8n)) { margin-right: 20px; }
+				&:nth-child(n+9){ margin-top: 60px; }
+			}
+			&.center { justify-content: center; }
+		}
+	}
+}

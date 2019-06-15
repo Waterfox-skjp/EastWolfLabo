@@ -11,7 +11,7 @@ ErrorDocument 404 /favicon.ico
 	Header set Cache-Control "max-age=2592000, public"
 </Files>
 
-<Files ~ ".(css|js|html|gz)$">
+<Files ~ ".(css|js|html|php|gz)$">
 	Header set Cache-Control "max-age=864000, public"
 </Files>
 
@@ -25,3 +25,7 @@ RewriteRule ^(.*)index.php$ /$1 [R=301,L]
 
 # リダイレクト設定
 RewriteRule ^index.html / [R=301,L]
+RewriteRule ^projects.html /projects/ [R=301,L]
+RewriteRule ^about.html /about/ [R=301,L]
+RewriteRule ^member.html /member/ [R=301,L]
+RewriteRule ^contact.html /contact/ [R=301,L]
