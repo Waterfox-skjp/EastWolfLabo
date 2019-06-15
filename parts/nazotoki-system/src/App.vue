@@ -215,8 +215,7 @@ footer {
   max-width: 1040px;
 }
 
-.question-area {
-  padding: 40px 0;
+.question-area { padding: 40px 0;
   .note-box { margin-bottom: 40px; padding-top: 40px; position: relative;
     h2 {
       padding: 0 20px;
