@@ -13,6 +13,7 @@
       animation: cloud 60s linear infinite;
       background-position-y: bottom;
       background-size: cover;
+      background-repeat: repeat-x; 
     }
     @keyframes cloud {
       0% { background-position-x: 0px; }
