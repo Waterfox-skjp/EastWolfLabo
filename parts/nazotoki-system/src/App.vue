@@ -216,55 +216,6 @@ footer {
 }
 
 .question-area { padding: 40px 0;
-  .note-box { margin-bottom: 40px; padding-top: 40px; position: relative;
-    h2 {
-      padding: 0 20px;
-      border-radius: 5px 5px 0 0;
-      display: flex;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 40px;
-      color: #1E242D;
-      background: #FFF;
-      font-size: 18px;
-      &:before {
-        margin-right: .3em;
-        content: "\f05a";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 700;
-      }
-    }
-    .note-list {
-      padding: 20px;
-      border: 1px solid #FFF;
-      border-radius: 0 5px 5px 5px;
-      font-size: 18px;
-      li { padding-left: 1.2em; position: relative;
-        &:before { position: absolute; left: 0; content: "・"; }
-      }
-    }
-  }
-  .warning-box {
-    margin-bottom: 40px;
-    padding: 20px 20px 20px 80px;
-    position: relative;
-    color: #C00000;
-    border: 1px solid #C00000;
-    border-radius: 5px;
-    &:before {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 20px;
-      content: "\f071";
-      font-family: "Font Awesome 5 Free";
-      font-size: 32px;
-      font-weight: 700;
-      transform: translateY(-50%);
-    }
-  }
   .q-img-wrap {
     position: relative;
     line-height: 0;
