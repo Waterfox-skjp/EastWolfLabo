@@ -18,17 +18,20 @@ $alphabetFont: 'Roboto Slab', Arial, sans-serif;
 /*---------- 共通 ----------*/
 @import 'common';
 
-/*---------- HOME ----------*/
+/*---------- Home ----------*/
 @import 'home';
 
-/*---------- PROJECTS ----------*/
+/*---------- Project ----------*/
 @import 'projects';
 
-/*---------- PROJECTS ----------*/
+/*---------- About ----------*/
 @import 'about';
 
-/*---------- PROJECTS ----------*/
+/*---------- Member ----------*/
 @import 'member';
+
+/*---------- Contact ----------*/
+@import 'contact';
 
 /* スマートフォン
 ----------------------------------------------------------------------------*/
@@ -37,7 +40,7 @@ $alphabetFont: 'Roboto Slab', Arial, sans-serif;
 /*---------- 共通 ----------*/
 @import 'common-sp';
 
-/*---------- HOME ----------*/
+/*---------- Home ----------*/
 @import 'home-sp';
 
 }

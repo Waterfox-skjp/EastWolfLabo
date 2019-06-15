@@ -1,0 +1,28 @@
+.contact {
+	.main-visual {
+		background-image: url(/images/contact/main-visual.jpg);
+	}
+	.contact-detail { padding: 110px 0;
+		h2 {
+			margin-bottom: 30px;
+			font-family: 'Roboto', Arial, serif;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.contact-list {
+			margin-top: 30px;
+			color: #888;
+			font-size: 18px;
+			font-family: "Roboto Slab",Arial,sans-serif;
+			li { padding-left: 1.8em; position: relative;
+				&:before { position: absolute; left: 0; @include faIcon(); }
+				&.mail:before { content: '\f0e0'; }
+				&.web:before { content: '\f57d'; }
+				&:not(:last-child) { margin-bottom: 15px; }
+			}
+			a { color: #888;
+				&:hover { color: #2FA6DE; }
+			}
+		}
+	}
+}

@@ -57,7 +57,7 @@
 						&.link {
 							a.inner { color: #ff9f00; }
 							.inner {
-								&:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0c1"; }
+								&:before { @include faIcon(); content: "\f0c1"; }
 							}
 						}
 						&:not(:last-child) { margin-right: 12px; }
