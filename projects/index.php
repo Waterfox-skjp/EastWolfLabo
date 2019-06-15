@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <?php
-	$title = 'PROJECTS';
+	$title = 'Project';
 	include_once($_SERVER['DOCUMENT_ROOT'] . '/include/head.php');
 ?>
 </head>
