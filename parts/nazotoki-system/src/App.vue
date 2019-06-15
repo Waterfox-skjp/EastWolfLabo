@@ -54,7 +54,11 @@ export default {
   methods: {
     submitData(){
       if(this.answer != ""){
-        if(this.answer == this.answerList[this.nowPage].answer){
+        // 全角英数を半角英数に変換
+        var input = this.toHalfWidth(this.answer);
+        // 回答の配列に該当した場合
+        var correct = this.answerList[this.nowPage].answer;
+        if(correct.indexOf(input) >= 0){
           if(window.confirm('正解です！\n次の問題を表示しますか？')){
             var nextPage = this.nowPage
             nextPage++
@@ -68,6 +72,22 @@ export default {
       }else{
         alert('答えを入力してください')
       }
+    },
+    toHalfWidth(strVal){
+      // 半角変換
+      var halfVal = strVal.replace(/[！-～]/g,
+        function(tmpStr) {
+          // 文字コードをシフト
+          return String.fromCharCode( tmpStr.charCodeAt(0) - 0xFEE0 );
+        }
+      );
+      // 文字コードシフトで対応できない文字の変換
+      return halfVal.replace(/”/g, "\"")
+      .replace(/’/g, "'")
+      .replace(/‘/g, "`")
+      .replace(/￥/g, "\\")
+      .replace(/　/g, " ")
+      .replace(/〜/g, "~");
     }
   }
 }
