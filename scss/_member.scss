@@ -2,8 +2,7 @@
 	.main-visual {
 		background-image: url(/images/member/main-visual.jpg);
 	}
-	.member-wrap {
-		padding: 110px 0;
+	.member-wrap { padding: 110px 0;
 		h2 {
 			margin-bottom: 30px;
 			font-family: 'Roboto', Arial, serif;
@@ -38,7 +37,6 @@
 				}
 				.social-list { margin-top: 15px; display: flex; justify-content: center;
 					li {
-						display: block;
 						width: 18px;
 						height: 18px;
 						font-size: 0;

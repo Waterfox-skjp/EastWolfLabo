@@ -6,6 +6,10 @@ p { @include vmin(26); }
 
 .inner-wrap { padding: 0; width: 90%; }
 
+section {
+	& + section { margin-top: px(80,576); }
+}
+
 header {
 	padding: px(20) 0;
 	margin-top: px(66);
@@ -84,7 +88,7 @@ header {
 }
 
 footer {
-	h3 { margin-bottom: px(30,576); @include vmin(32); letter-spacing: 0; }
+	h2 { margin-bottom: px(30,576); @include vmin(36); letter-spacing: 0; }
 	.footer-contents { padding: px(120) 0; display: block;
 		.item { width: 100%;
 			&:not(:last-child) { margin-bottom: px(60,576); }

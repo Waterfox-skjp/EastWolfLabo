@@ -1,0 +1,22 @@
+.about {
+	.about-detail { padding: px(110) 0;
+		.column-two { margin-top: px(80,576); display: block;
+			section { width: 100%;
+				& + section { margin: 0; }
+				&:last-child { margin-top: px(80,576); margin-left: 0; }
+			}
+		}
+		h2 { margin-bottom: px(30,576); @include vmin(36); }
+		.detail-list { @include vmin(26);
+			dt,dd {
+				&:not(:last-of-type) { margin-bottom: px(10,576); }
+			}
+		}
+		.project-list { @include vmin(26);
+			li { padding-left: 5em;
+				.label { width: 5em; @include vmin(22); }
+				&:not(:last-child) { margin-bottom: px(10,576); }
+			}
+		}
+	}
+}

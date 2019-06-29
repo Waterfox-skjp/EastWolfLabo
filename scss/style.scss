@@ -12,35 +12,47 @@ $alphabetFont: 'Roboto Slab', Arial, sans-serif;
 // ミックスイン
 @import 'mixin';
 
-/*---------- リセット ----------*/
+// リセット
 @import 'reset';
 
-/*---------- 共通 ----------*/
+// 共通
 @import 'common';
 
-/*---------- Home ----------*/
+// Home
 @import 'home';
 
-/*---------- Project ----------*/
+// Project
 @import 'projects';
 
-/*---------- About ----------*/
+// About
 @import 'about';
 
-/*---------- Member ----------*/
+// Member
 @import 'member';
 
-/*---------- Contact ----------*/
+// Contact
 @import 'contact';
 
 /* スマートフォン
 ----------------------------------------------------------------------------*/
 @media only screen and (max-width: 640px) {
 
-/*---------- 共通 ----------*/
+// 共通
 @import 'common-sp';
 
-/*---------- Home ----------*/
+// Home
 @import 'home-sp';
+
+// Project
+@import 'projects-sp';
+
+// About
+@import 'about-sp';
+
+// Member
+@import 'member-sp';
+
+// Contact
+@import 'contact-sp';
 
 }
