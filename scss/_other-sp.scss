@@ -8,3 +8,10 @@
 		}
 	}
 }
+
+.notfound {
+	.notfound-detail { padding: px(110) 0;
+		p { text-align: justify; }
+		.large-font { @include vmin(36); }
+	}
+}
