@@ -2,8 +2,7 @@
 	.main-visual {
 		background-image: url(/images/about/main-visual.jpg);
 	}
-	.about-detail {
-		padding: 110px 0;
+	.about-detail { padding: 110px 0;
 		.column-two { margin-top: 80px; display: flex;
 			section { width: 49%;
 				& + section { margin: 0; }

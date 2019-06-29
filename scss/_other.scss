@@ -26,3 +26,13 @@
 		}
 	}
 }
+
+.notfound {
+	.main-visual {
+		background-image: url(/images/notfound/main-visual.jpg);
+	}
+	.notfound-detail { padding: 110px 0;
+		p { text-align: center; }
+		.large-font { font-size: 30px; font-weight: bold; }
+	}
+}

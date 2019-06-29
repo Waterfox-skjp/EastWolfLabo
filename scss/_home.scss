@@ -22,9 +22,7 @@
 	}
 	.project-list {
 		ul { display: flex; }
-		li {
-			overflow: hidden;
-			width: 100%;
+		li { overflow: hidden; width: 100%;
 			a { position: relative; display: block; line-height: 0; color: #FFF;
 				h2 {
 					padding: 0 20px;

@@ -11,7 +11,7 @@
 		<?php include_once($_SERVER['DOCUMENT_ROOT'] . '/include/header.php'); ?>
 		<main>
 			<div id="js-main-visual" class="main-visual">
-				<h1>PROJECTS</h1>
+				<h1 class="page-title">PROJECTS</h1>
 				<div class="bottom-scroll">
 					<a href="#anchor-contents">
 						<div class="icon-mouse"></div>

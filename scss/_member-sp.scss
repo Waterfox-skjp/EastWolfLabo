@@ -1,0 +1,22 @@
+.member {
+	.member-wrap { padding: px(110) 0;
+		h2 { margin-bottom: px(40,576); @include vmin(36); }
+		.member-list {
+			> li { width: 30%;
+				.icon-wrap { margin-bottom: px(15,184); }
+				.name { margin-bottom: px(8,184); @include vmin(26); }
+				.role { @include vmin(22); }
+				.social-list { margin-top: px(15,184);
+					li { width: 5vmin; height: 5vmin;
+						.inner:before { @include vmin(32); }
+						&:not(:last-child) { margin-right: 3vmin; }
+					}
+				}
+				&:not(:nth-child(8n)) { margin-right: 0; }
+				&:nth-child(n+9){ margin-top: 0; }
+				&:not(:nth-child(3n)) { margin-right: 5%; }
+				&:nth-child(n+4){ margin-top: 10%; }
+			}
+		}
+	}
+}

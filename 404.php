@@ -2,16 +2,16 @@
 <html lang="ja">
 <head>
 <?php
-	$title = 'Contact';
+	$title = '404 Not Found';
 	include_once($_SERVER['DOCUMENT_ROOT'] . '/include/head.php');
 ?>
 </head>
-<body class="contact">
+<body class="notfound">
 	<div class="wrap">
 		<?php include_once($_SERVER['DOCUMENT_ROOT'] . '/include/header.php'); ?>
 		<main>
 			<div id="js-main-visual" class="main-visual">
-				<h1 class="page-title">CONTACT</h1>
+				<h1 class="page-title">404 Not Found</h1>
 				<div class="bottom-scroll">
 					<a href="#anchor-contents">
 						<div class="icon-mouse"></div>
@@ -19,16 +19,10 @@
 					</a>
 				</div>
 			</div>
-			<div id="anchor-contents" class="contact-detail">
+			<div id="anchor-contents" class="notfound-detail">
 				<div class="inner-wrap">
-					<section>
-						<h2>お問い合わせ</h2>
-						<p>お問い合わせは以下よりお願い致します。</p>
-						<ul class="contact-list">
-							<li class="mail"><a href="mailto:east.wolf.laboratory@gmail.com">east.wolf.laboratory@gmail.com</a></li>
-							<li class="web"><a href="http://eastwolflabo.rw.xsi.jp/">http://eastwolflabo.rw.xsi.jp/</a></li>
-						</ul>
-					</section>
+					<p class="large-font">お探しのページは見つかりませんでした。</p>
+					<p>申し訳ございませんが、お探しのページは見つかりませんでした。<br>URLが間違っているか、移動または削除された可能性があります。</p>
 				</div>
 			</div>
 		</main>

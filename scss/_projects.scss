@@ -30,7 +30,10 @@
 				p { color: #B2B2B2; font-size: 16px; }
 			}
 			&:hover {
-				.img-area img { transform: scale(1.1); }
+				.img-area {
+					img { transform: scale(1.1); }
+					&:after { background: rgba(0,0,0,0); }
+				}
 			}
 		}
 	}
