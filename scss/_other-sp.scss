@@ -1,0 +1,17 @@
+.contact {
+	.contact-detail { padding: px(110) 0;
+		h2 { margin-bottom: px(30,576); @include vmin(36); }
+		.contact-list { margin-top: px(30,576); @include vmin(26);
+			li {
+				&:not(:last-child) { margin-bottom: px(20,576); }
+			}
+		}
+	}
+}
+
+.notfound {
+	.notfound-detail { padding: px(110) 0;
+		p { text-align: justify; }
+		.large-font { @include vmin(36); }
+	}
+}

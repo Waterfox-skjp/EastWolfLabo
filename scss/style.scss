@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+$contentsPadding: 20px;
+$contentsMax: 1240px;
+$primaryColor: #2FA6DE;
+
+$alphabetFont: 'Roboto Slab', Arial, sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
+// ミックスイン
+@import 'mixin';
+
+// リセット
+@import 'reset';
+
+// 共通
+@import 'common';
+
+// Home
+@import 'home';
+
+// Project
+@import 'projects';
+
+// About
+@import 'about';
+
+// Member
+@import 'member';
+
+// Other
+@import 'other';
+
+/* スマートフォン
+----------------------------------------------------------------------------*/
+@media only screen and (max-width: 640px) {
+
+// 共通
+@import 'common-sp';
+
+// Home
+@import 'home-sp';
+
+// Project
+@import 'projects-sp';
+
+// About
+@import 'about-sp';
+
+// Member
+@import 'member-sp';
+
+// Other
+@import 'other-sp';
+
+}
