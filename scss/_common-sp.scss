@@ -57,7 +57,7 @@ header {
 }
 
 .main-visual { padding-top: px(215);
-	h1 { padding: 0 5%; @include vmin(48); }
+	.page-title { padding: 0 5%; @include vmin(48); }
 	.bottom-scroll {
 		margin-bottom: px(10);
 		bottom: 0;
@@ -88,7 +88,7 @@ header {
 }
 
 footer {
-	h2 { margin-bottom: px(30,576); @include vmin(36); letter-spacing: 0; }
+	.footer-headline { margin-bottom: px(30,576); @include vmin(36); letter-spacing: 0; }
 	.footer-contents { padding: px(120) 0; display: block;
 		.item { width: 100%;
 			&:not(:last-child) { margin-bottom: px(60,576); }

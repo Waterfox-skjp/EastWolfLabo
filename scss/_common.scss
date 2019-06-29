@@ -87,7 +87,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	h1 {
+	.page-title {
 		padding: 0 $contentsPadding;
 		position: relative;
 		z-index: 4;
@@ -160,7 +160,7 @@ header {
 footer {
 	color: #65696F;
 	background: #222831;
-	h2 {
+	.footer-headline {
 		margin-bottom: 30px;
 		color: #D3D4D6;
 		font-size: 18px;

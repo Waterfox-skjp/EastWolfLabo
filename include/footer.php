@@ -2,11 +2,11 @@
 	<div class="inner-wrap">
 		<div class="footer-contents">
 			<div class="item">
-				<h2>About Us</h2>
+				<h2 class="footer-headline">About Us</h2>
 				<p>インターネットという無限の可能性を持つ媒体を拠点に様々な視点から生み出した様々な謎をまとめ、形にすることを目的とした団体です。</p>
 			</div>
 			<div class="item">
-				<h2>Projects</h2>
+				<h2 class="footer-headline">Projects</h2>
 				<ul>
 					<li><a href="/number_virus_searcher/">数字とウイルスの人探し</a></li>
 					<li><a href="/bomb_travel/">東狼爆弾旅行</a></li>
@@ -16,7 +16,7 @@
 				</ul>
 			</div>
 			<div class="item">
-				<h2>Link</h2>
+				<h2 class="footer-headline">Link</h2>
 				<ul class="icon">
 					<li class="twitter"><a href="https://twitter.com/EastWolfLabo" target="_blank">@EastWolfLabo</a></li>
 					<li class="twitter"><a href="http://twitcasting.tv/sinozakiryo/" target="_blank">twitcasting.tv/sinozakiryo/</a></li>
@@ -25,7 +25,7 @@
 				</ul>
 			</div>
 			<div class="item">
-				<h2>Twitter</h2>
+				<h2 class="footer-headline">Twitter</h2>
 				<a class="twitter-timeline" data-lang="en" data-width="640" data-height="600" href="https://twitter.com/EastWolfLabo?ref_src=twsrc%5Etfw">Tweets by EastWolfLabo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</div>
