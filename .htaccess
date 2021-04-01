@@ -15,9 +15,6 @@ ErrorDocument 404 /favicon.ico
 	Header set Cache-Control "max-age=864000, public"
 </Files>
 
-# SVG利用設定
-AddType image/svg+xml svg
-
 # index.php 無し統一
 RewriteEngine on
 RewriteCond %{THE_REQUEST} ^.*/index.php

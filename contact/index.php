@@ -26,7 +26,7 @@
 						<p>お問い合わせは以下よりお願い致します。</p>
 						<ul class="contact-list">
 							<li class="mail"><a href="mailto:east.wolf.laboratory@gmail.com">east.wolf.laboratory@gmail.com</a></li>
-							<li class="web"><a href="http://eastwolflabo.rw.xsi.jp/">http://eastwolflabo.rw.xsi.jp/</a></li>
+							<li class="web"><a href="http://eastwolflabo.starfree.jp/">http://eastwolflabo.starfree.jp/</a></li>
 						</ul>
 					</section>
 				</div>

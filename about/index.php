@@ -52,7 +52,7 @@
 							<dt>活動地</dt>
 							<dd>日本/東京都</dd>
 							<dt>Web</dt>
-							<dd><a href="http://eastwolflabo.rw.xsi.jp/">http://eastwolflabo.rw.xsi.jp/</a></dd>
+							<dd><a href="http://eastwolflabo.starfree.jp/">http://eastwolflabo.starfree.jp/</a></dd>
 							<dt>メール</dt>
 							<dd>east.wolf.laboratory@gmail.com</dd>
 							<dt>活動内容</dt>
